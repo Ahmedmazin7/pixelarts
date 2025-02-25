@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "image": "https://example.com/image1.jpg",
+      "name": "Sunset Beach",
+      "details": "A beautiful sunset at the beach with orange and pink hues."
+    },
+    {
+      "image": "https://example.com/image2.jpg",
+      "name": "Mountain View",
+      "details": "A scenic view of the mountains covered in snow."
+    },
+    {
+      "image": "https://example.com/image3.jpg",
+      "name": "City Skyline",
+      "details": "A stunning view of the city skyline at night with lights."
+    }
+  ]
+}

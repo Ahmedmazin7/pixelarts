@@ -13,7 +13,7 @@
   list-style-type: none;
   text-decoration: none;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  
 }
 .sub-h{
   font-size: 20px;
@@ -52,7 +52,7 @@ background: linear-gradient(103deg, rgba(0,226,224,1) 0%, rgba(0,169,242,1) 48%,
 
 .nav_bar{
   height: 70px;
-  position:static;
+  position:fixed;
   width: 100%;
   backdrop-filter: blur(20px);
   background: transparent;
@@ -103,6 +103,7 @@ background: linear-gradient(103deg, rgba(0,226,224,1) 0%, rgba(0,169,242,1) 48%,
 
 
 .home{
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -134,9 +135,10 @@ background: linear-gradient(103deg, rgba(0,226,224,1) 0%, rgba(0,169,242,1) 48%,
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   gap: 20px;
+  overflow: hidden;
 }
 .services{
   display: grid;
@@ -179,6 +181,7 @@ background: linear-gradient(103deg, rgba(0,226,224,1) 0%, rgba(0,169,242,1) 48%,
   align-items: center;
   justify-content: center;
   gap: 20px;
+  height: 100vh;
 }
 .items{
   display: flex;
@@ -195,10 +198,49 @@ background: linear-gradient(103deg, rgba(0,226,224,1) 0%, rgba(0,169,242,1) 48%,
   padding: 20px;
 }
 .item-img{
-  margin-top: 20px;
   height: 300px;
-  width: 200px;
+  width: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+/*   form */
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#input{
+  width: 250px;
+  padding: 10px;
+  background: rgb(255, 254, 254, 0.5);
+  backdrop-filter: blur(20px);
   border-radius: 10px;
+  color: var(--white-color);
+  border: none;
+}
+#message{
+  width: 525px;
+  height: 100px;
+  padding: 10px;
+  background: rgb(255, 254, 254, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  color: var(--white-color);
+  border: none;
+  margin-top: 20px;
+}
+.submit-btn{
+  height: 50px;
+  width: 70px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  color: var(--white-color);
+  background-color: var(--second-color);
 }
 @media (max-width: 600px) {
   .work_btn{
